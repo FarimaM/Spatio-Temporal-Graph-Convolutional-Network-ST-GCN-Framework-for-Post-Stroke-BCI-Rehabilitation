@@ -2,8 +2,6 @@
 
 A PyTorch + MNE framework that models EEG as a **spatio-temporal graph**: electrodes are nodes, scalp geometry (or data-driven connectivity) defines edges, and temporal convolutions extract sensorimotor mu/beta dynamics. It decodes left- vs right-hand motor imagery, provides interpretability tools (learned edges, electrode attention, saliency, C3/C4 lateralization) and a simulated closed-loop decoder for robotic-orthosis / FES triggering.
 
-> **Scope and honesty note.** The public dataset used here (PhysioNet EEG Motor Movement/Imagery) contains *healthy* participants. This repository is a methods and engineering framework motivated by post-stroke rehabilitation. It does **not** demonstrate clinical benefit or stroke biomarkers. Run the experiments yourself and report your own numbers.
-
 ## Features
 - MNE preprocessing: name standardisation, 10-05 montage, CAR, 0.5-48 Hz band-pass, epoching, resampling, caching
 - Graphs: spatial (Gaussian kernel + kNN), functional (training-set correlation), hybrid
